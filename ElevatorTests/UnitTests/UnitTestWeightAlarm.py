@@ -5,7 +5,9 @@ import unittest
 class UnitTestWeightAlarm(UnitTest):
     def __init__(self, author, info, service_name, elevator, input_weight, output_alarm):
         super().__init__(author, info, service_name, elevator)
+        # Weight of objects in lift
         self.input_weight = input_weight
+        # Alarm that should be triggered 
         self.output_alarm = output_alarm
 
     def run(self):
