@@ -9,8 +9,8 @@ class UnitTestStartMoving(UnitTest):
         self.output_action = output_action
 
     def run(self):
-        assert_result = self.assertEqual(self.elevator.Stuck(self.selected_floor), self.output_action)
+        assert_result = self.assertEqual(self.elevator.ElevatorMoving(self.selected_floor), self.output_action)
         return {
              "result": assert_result,
-             "message": "" if assert_result == True else "Weight Alarm does not work properly"
+             "message": "" if assert_result == True else "Elevator Moving does not work properly"
         }
